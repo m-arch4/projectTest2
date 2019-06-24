@@ -54,13 +54,25 @@ $navbar-default-bg: #3c3989;
   padding-top: 5px;
 }
 
-.article-body {
+.article-booody {
   margin-bottom: 2em;
 }
 
 .description {
   margin-top: 0;
 }
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.article-body {
+  border-top: 1px solid #3c3989;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
