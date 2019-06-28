@@ -23,7 +23,12 @@
   <div class="article-booody">
     <%= @article.description %>
   </div>
-  <div class="article-actions center">
+
+  <% if @article.categories.any? %>
+    <p>Categories: <%= render @article.categories %></p>
+  <% end %>
+
+  <div class="article-actions">
     <%= link_to "View all articles", articles_path,
     class: "btn btn-xs btn-default" %>
     <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
